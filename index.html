@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hojiakbar Turotov">
+        <title>TravelCream</title>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
+        <!-- Bootstrap icons -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <!-- CSS course code -->
+        <link rel="stylesheet" href="./style/style.css"></head>
+    <body>
+        <!--  -->
+        <header>
+            <div class="container h-100">
+                <nav id="navbarPage" class="navbar navbar-expand-md
+                    navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand fw-bold" href="#">TravelCream</a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse"
+                            id="navbarCollapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#flights">Flights</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hotels">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#trips">Trips</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#attractions">Activity</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#deals">Deals</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <button class="btn btn-outline-light px-2
+                                    px-md-4"
+                                    type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="d-flex justify-content-center
+                    align-items-center h-100 flex-column text-white">
+                    <p class="fs-1">
+                        Do you want to visit Paris ?
+                    </p>
+                    <p class="fs-5">
+                        Why not
+                    </p>
+                </div>
+            </div>
+        </header>
+        <!--  -->
+        <!--  -->
+        <section id="flights">
+            <div class="container">
+                <div class="search position-relative w-75 mx-auto">
+                    <div class="position-absolute bottom-100 w-100">
+                        <form action="" class="d-flex">
+                            <input type="text" class="form-control px-md-4"
+                                placeholder="Where are you leaving from ?">
+                            <input type="text" class="form-control px-md-4"
+                                placeholder="Where do you want to go ?">
+                            <input type="text" class="form-control px-md-4 w-30"
+                                placeholder="Date">
+                            <button class="btn btn-danger">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flights-body pt-3 pt-md-5">
+                    <div class="d-flex flex-wrap justify-content-between pt-3
+                        pt-md-5">
+                        <p class="fs-5">
+                            Flights
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <p class="px-2 text-danger">Flights</p>
+                            <p class="px-2">Best Price</p>
+                            <p class="px-2">Airline</p>
+                            <p class="px-2">Schedule</p>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Airline</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Departure</th>
+                            <th scope="col">Arrival</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="row ps-3">
+                                    <div class="col-3">
+                                        <img src="./png/1.png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="fw-bolder">Vueling</span>
+                                        <p class="text-uppercase">VO1367</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            03/11/2017
+                                        </span>
+                                        <p class="text-center">
+                                            In 3 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Paris (CDG)
+                                        </span>
+                                        <p class="text-center">
+                                            07:15
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Miami
+                                        </span>
+                                        <p class="text-center">
+                                            5:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder text-center w-100
+                                            d-inline-block">
+                                            08:45
+                                        </span>
+                                        <p>
+                                            CDG – MIA
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start
+                                    h-100">
+                                    <div class="btn btn-outline-danger px-2
+                                        px-md-4 mt-2 py-2">
+                                        870 $
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row ps-3">
+                                    <div class="col-3">
+                                        <img src="./png/1.png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="fw-bolder">Vueling</span>
+                                        <p class="text-uppercase">VO1367</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            03/11/2017
+                                        </span>
+                                        <p class="text-center">
+                                            In 3 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Paris (CDG)
+                                        </span>
+                                        <p class="text-center">
+                                            07:15
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Miami
+                                        </span>
+                                        <p class="text-center">
+                                            5:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder text-center w-100
+                                            d-inline-block">
+                                            08:45
+                                        </span>
+                                        <p>
+                                            CDG – MIA
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start
+                                    h-100">
+                                    <div class="btn btn-outline-danger px-2
+                                        px-md-4 mt-2 py-2">
+                                        870 $
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row ps-3">
+                                    <div class="col-3">
+                                        <img src="./png/1.png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="fw-bolder">Vueling</span>
+                                        <p class="text-uppercase">VO1367</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            03/11/2017
+                                        </span>
+                                        <p class="text-center">
+                                            In 3 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Paris (CDG)
+                                        </span>
+                                        <p class="text-center">
+                                            07:15
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Miami
+                                        </span>
+                                        <p class="text-center">
+                                            5:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder text-center w-100
+                                            d-inline-block">
+                                            08:45
+                                        </span>
+                                        <p>
+                                            CDG – MIA
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start
+                                    h-100">
+                                    <div class="btn btn-outline-danger px-2
+                                        px-md-4 mt-2 py-2">
+                                        870 $
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row ps-3">
+                                    <div class="col-3">
+                                        <img src="./png/1.png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="fw-bolder">Vueling</span>
+                                        <p class="text-uppercase">VO1367</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            03/11/2017
+                                        </span>
+                                        <p class="text-center">
+                                            In 3 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Paris (CDG)
+                                        </span>
+                                        <p class="text-center">
+                                            07:15
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Miami
+                                        </span>
+                                        <p class="text-center">
+                                            5:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder text-center w-100
+                                            d-inline-block">
+                                            08:45
+                                        </span>
+                                        <p>
+                                            CDG – MIA
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start
+                                    h-100">
+                                    <div class="btn btn-outline-danger px-2
+                                        px-md-4 mt-2 py-2">
+                                        870 $
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row ps-3">
+                                    <div class="col-3">
+                                        <img src="./png/1.png" alt="">
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="fw-bolder">Vueling</span>
+                                        <p class="text-uppercase">VO1367</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            03/11/2017
+                                        </span>
+                                        <p class="text-center">
+                                            In 3 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Paris (CDG)
+                                        </span>
+                                        <p class="text-center">
+                                            07:15
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder">
+                                            Miami
+                                        </span>
+                                        <p class="text-center">
+                                            5:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start">
+                                    <div>
+                                        <span class="fw-bolder text-center w-100
+                                            d-inline-block">
+                                            08:45
+                                        </span>
+                                        <p>
+                                            CDG – MIA
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column
+                                    justify-content-center align-items-start
+                                    h-100">
+                                    <div class="btn btn-outline-danger px-2
+                                        px-md-4 mt-2 py-2">
+                                        870 $
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row pb-2 pb-md-4 mb-2 mb-md-4">
+                    <div class="col text-end">
+                        See all flights
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!--  -->
+        <section id="hotels">
+            <div class="container">
+                <div class="pt-3 pt-md-5">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <p class="fs-3 fw-bold">
+                            Hotels
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <p class="px-2 text-danger">Best Price</p>
+                            <p class="px-2">Distance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotels-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 my-3">
+                            <div class="card shadow-sm">
+                                <div class="card-img w-100">
+                                    <img src="./img/hotelImg1.jpeg" alt=""
+                                        class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text fw-bolder">Hôtel Paris
+                                        Ouest Achères</p>
+                                    <p class="d-flex justify-content-between">
+                                        <span>12,3 km</span>
+                                        <span>Free Wi-Fi</span>
+                                    </p>
+                                    <div class="d-flex
+                                        justify-content-between
+                                        align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn
+                                                btn-sm
+                                                btn-outline-danger px-2
+                                                px-md-4">30 $</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-2 pb-md-4 mb-2 mb-md-4">
+                    <div class="col text-end">
+                        See all hotels
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!--  -->
+        <div id="attractions">
+            <div class="container">
+                <div class="pt-3 pt-md-5">
+                    <div class="d-flex justify-content-between
+                        align-items-center flex-wrap">
+                        <p class="fs-3 fw-bold">
+                            Attractions
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <p class="px-2 text-danger">All</p>
+                            <p class="px-2">Shoppings</p>
+                            <p class="px-2">Shows</p>
+                            <p class="px-2">Parks</p>
+                            <p class="px-2">Circuits</p>
+                            <p class="px-2">Museums</p>
+                            <p class="px-2">Monuments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="attractions-body w-100">
+                    <div class="row w-100">
+                        <div class="col-md-4 position-relative">
+                            <img src="./img/parij.jpeg" alt="" class="w-100 mb-2
+                                mb-md-0">
+                            <div class="position-absolute text-white fw-bolder">
+                                <span>Eiffel Tower</span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 h-100">
+                            <div class="col-md-6 position-relative w-100
+                                mb-lg-3">
+                                <img src="./img/france.jpeg" alt=""
+                                    class="w-100">
+                                <div class="position-absolute text-white
+                                    fw-bolder">
+                                    <span>Louvres</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative w-100 mt-2
+                                mt-lg-3 float-end">
+                                <img src="./img/france.jpeg" alt=""
+                                    class="w-100">
+                                <div class="position-absolute text-white
+                                    fw-bolder">
+                                    <span>Louvres</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-2 mt-md-4 position-relative">
+                            <img src="./img/helles.jpeg" alt="" class="w-100
+                                mb-1 mb-md-0">
+                            <div class="position-absolute text-white fw-bolder">
+                                <span>Forum des Halles</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-1 mt-md-4 position-relative">
+                            <img src="./img/helles.jpeg" alt="" class="w-100
+                                mb-1 mb-md-0">
+                            <div class="position-absolute text-white fw-bolder">
+                                <span>Forum des Halles</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-1 mt-md-4 position-relative">
+                            <img src="./img/helles.jpeg" alt="" class="w-100
+                                mb-1 mb-md-0">
+                            <div class="position-absolute text-white fw-bolder">
+                                <span>Forum des Halles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-2 pb-md-4 my-2 my-md-4">
+                    <div class="col text-end">
+                        See all attractions
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="trips">
+            <div class="container">
+                <div>
+                    <div class="d-flex justify-content-between
+                        align-items-center flex-wrap">
+                        <p class="fs-3 fw-bold">
+                            Trips
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <p class="px-2 text-danger">Best Trips</p>
+                            <p class="px-2">Popularity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center border-light border-2 border
+                    mb-3">
+                    <div class="col-md-4">
+                        <img src="./img/trips1.jpeg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="fs-5 fw-bold">
+                            Accès prioritaire au sommet de la tour Eiffel et
+                            hôte
+                        </p>
+                        <p class="fs-6">
+                            Avec ce billet coupe-file pour la tour Eiffel,
+                            profitez de la seule entrée prioritaire à la tour
+                            qui comprend un guide et des commentaires, vous
+                            offrant une visite sans encombre de
+                            l'un des monuments les plus visités au monde.
+                            Accompagné de votre guide depuis
+                            l'extérieur de l'entrée principale jusqu'au deuxième
+                            étage, vous profiterez d'une entrée
+                            détendue à la tour Eiffel avec suffisamment de temps
+                            libre pour flâner.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center border-light border-2 border
+                    mb-3">
+                    <div class="col-md-4">
+                        <img src="./img/trips1.jpeg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="fs-5 fw-bold">
+                            Accès prioritaire au sommet de la tour Eiffel et
+                            hôte
+                        </p>
+                        <p class="fs-6">
+                            Avec ce billet coupe-file pour la tour Eiffel,
+                            profitez de la seule entrée prioritaire à la tour
+                            qui comprend un guide et des commentaires, vous
+                            offrant une visite sans encombre de
+                            l'un des monuments les plus visités au monde.
+                            Accompagné de votre guide depuis
+                            l'extérieur de l'entrée principale jusqu'au deuxième
+                            étage, vous profiterez d'une entrée
+                            détendue à la tour Eiffel avec suffisamment de temps
+                            libre pour flâner.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center border-light border-2 border
+                    mb-3">
+                    <div class="col-md-4">
+                        <img src="./img/trips1.jpeg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="fs-5 fw-bold">
+                            Accès prioritaire au sommet de la tour Eiffel et
+                            hôte
+                        </p>
+                        <p class="fs-6">
+                            Avec ce billet coupe-file pour la tour Eiffel,
+                            profitez de la seule entrée prioritaire à la tour
+                            qui comprend un guide et des commentaires, vous
+                            offrant une visite sans encombre de
+                            l'un des monuments les plus visités au monde.
+                            Accompagné de votre guide depuis
+                            l'extérieur de l'entrée principale jusqu'au deuxième
+                            étage, vous profiterez d'une entrée
+                            détendue à la tour Eiffel avec suffisamment de temps
+                            libre pour flâner.
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-2 pb-md-4 my-2 my-md-4">
+                    <div class="col text-end">
+                        See all Trips
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div id="deals">
+            <div class="container">
+                <div class="row pb-5 mb-5">
+                    <div class="col-md-3">
+                        <p class="fs-3 fw-bold">
+                            Cities
+                        </p>
+                        <p>Paris</p>
+                        <p>Miami</p>
+                        <p>London</p>
+                        <p>Madrid</p>
+                        <p>Tokyo</p>
+                        <p>Pekin</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="fs-3 fw-bold">
+                            Explore
+                        </p>
+                        <p>Register</p>
+                        <p>Login</p>
+                        <p>Assistance</p>
+                        <p>Eco</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="fs-3 fw-bold">
+                            About us
+                        </p>
+                        <p>About TravelCream</p>
+                        <p>Careers</p>
+                        <p>Blog</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms of Usage</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="fs-3 fw-bold">
+                            Contact
+                        </p>
+                        <p>
+                            Feel free to get in touch via
+                        </p>
+                        <p class="text-danger"> email: support@travelcream.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!-- JS course code -->
+        <script src="./app/app.js"></script>
+    </body>
+</html>
